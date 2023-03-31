@@ -1,0 +1,27 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
+public class H2Ders {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int sec,sayi1,sayi2;
+
+        System.out.println("1.toplama");
+        System.out.println("2.cıkartma");
+        System.out.println("3.carpma");
+        System.out.println("4.bolme");
+        System.out.println("yapcagınız islemi secin");
+        sec=input.nextInt();
+        System.out.println("birinci sayiyi girin");
+        sayi1=input.nextInt();
+        System.out.println("ikinci sayiyi giriniz");
+        sayi2=input.nextInt();
+        if(sec==1)
+            System.out.println("toplam:"+(sayi1+sayi2));
+        else if(sec==2)
+            System.out.println("cıkartma:"+(sayi1-sayi2));
+        else if (sec==3)
+            System.out.println("carpma:"+sayi1*sayi2);
+        else
+            System.out.println("bolme:"+(double)sayi1/sayi2);
+        }
+    }

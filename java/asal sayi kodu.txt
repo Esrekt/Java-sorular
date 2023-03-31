@@ -1,0 +1,19 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
+public class H2Ders {
+    public static void main(String[] args) {
+int sayi;
+        Scanner inp=new Scanner(System.in);
+        System.out.println("sayi giriniz: ");
+        sayi=inp.nextInt();
+        boolean b=false;
+         for(int i=2;i<sayi;i++){
+             if(sayi%i==0)
+                 b=true;
+                 break;
+            }
+     if(b)
+         System.out.println("sayi asal degil");
+     else
+         System.out.println("sayi asal");
+} }
